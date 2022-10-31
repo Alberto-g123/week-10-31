@@ -23,9 +23,7 @@ public class CodingChallenge {
                 cipher += String.valueOf(letter);
             }else{
                 for(int x = 0; x < alphabet.length(); x++){
-                    if(letter == blank){
-                        cipher += " ";
-                    }else if(Character.isUpperCase(letter)){
+                    if(Character.isUpperCase(letter)){
                         if(letter == alphabet.toUpperCase().charAt(x)){
                             cipher += alphabet.toUpperCase().charAt(25 - x);
                         }
